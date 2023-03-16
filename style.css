@@ -1,38 +1,36 @@
 body {
-    font-family: 'Golos Text', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
 }
 
 .container {
+    margin: 0px auto;
     min-height: 100vh;
-    font-family: 'Golos Text', sans-serif;
     max-width: 1024px;
-    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 h1 {
     font-size: 25px;
-    font-weight: medium;
+    font-weight: 500;
 }
 
 p {
-    font-size: 14px;
     margin: 0;
+    font-size: 15px;
 }
 
 a {
     text-decoration: none;
     color: #000;
-    font-size: 14px;
-    margin-right: 20px;
+    font-size: 15px;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #636363;
 }
 
 .left {
@@ -45,6 +43,10 @@ a:hover {
 .links {
     display: flex;
     justify-content: space-between;
+}
+
+.links a {
+    margin-right: 20px;
 }
 
 .right {
@@ -71,6 +73,7 @@ a:hover {
 
 .buttons {
     display: flex;
+    justify-content: space-between;
 }
 
 .contact {
@@ -81,13 +84,15 @@ a:hover {
     height: 40px;
     background: #000;
     color: #fff;
-    outline: none;
-    stroke: none;
     border-radius: 100px;
     font-size: 14px;
     text-decoration: none;
-    border: none;
-    font-family: 'Golos Text', sans-serif; 
+}
+
+.contact:hover {
+    text-decoration: none;
+    background-color: #636363;
+    color: #fff;
 }
 
 .works {
@@ -96,19 +101,17 @@ a:hover {
     line-height: 36px;
     width: 160px;
     height: 36px;
-    background: #000;
-    color: #fff;
     border-radius: 100px;
     font-size: 14px;
     text-decoration: none;
-    font-family: 'Golos Text', sans-serif;
     background-color: #fff;
     border: 2px solid #000;
     color: #000;
 }
 
 .works:hover {
-    background-color: #000;
+    background-color: #636363;
     color: #fff;
     text-decoration: none;
+    border: 2px solid #636363;
 }
