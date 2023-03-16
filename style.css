@@ -1,0 +1,90 @@
+body {
+    font-family: 'Golos Text', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    font-family: 'Golos Text', sans-serif;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: medium;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.left {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about {
+    margin-bottom: 20px;
+}
+
+.freelance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 160px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    outline: none;
+    stroke: none;
+    border-radius: 100px;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.works {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
