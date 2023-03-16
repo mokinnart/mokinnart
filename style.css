@@ -29,12 +29,20 @@ a {
     font-size: 15px;
 }
 
-a:hover {
-    color: #636363;
+.behance:hover {
+    color: #4176FA;
+}
+
+.dribbble:hover {
+    color: #F26798;
+}
+
+.telegram:hover {
+    color: #37AEE2;
 }
 
 .left {
-    margin: 40px 0;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,7 +58,7 @@ a:hover {
 }
 
 .right {
-    margin: 40px 0;
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -64,6 +72,10 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.freelance a:hover {
+    color: #86ff90;
 }
 
 .data {
@@ -93,6 +105,10 @@ a:hover {
     text-decoration: none;
     background-color: #636363;
     color: #fff;
+}
+
+a.telegram {
+    margin: 0;
 }
 
 .works {
@@ -126,7 +142,7 @@ a:hover {
     }
 
     .left {
-        margin: 40px 0;
+        margin-top: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -138,6 +154,11 @@ a:hover {
     }
 
     .freelance {
+        margin: 0;
+    }
+
+    h1 {
+        margin: 0;
         margin-bottom: 20px;
     }
 
@@ -152,7 +173,7 @@ a:hover {
 
     .right {
         min-height: 80vh;
-        margin: 40px 0;
+        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -161,14 +182,19 @@ a:hover {
 
 @media screen and (max-width: 480px) {
     .container {
-        max-width: 460px;
+        max-width: 450px;
     }
 
-    .left {
-        margin: 20px 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 12px;
     }
 
     .right {
@@ -176,14 +202,21 @@ a:hover {
     }
 
     .logo {
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
 
-    .freelance {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        margin-bottom: 0px; */
+    .contact {
+        width: 140px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+
+    .works {
+        width: 140px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 12px;
+
     }
 }
