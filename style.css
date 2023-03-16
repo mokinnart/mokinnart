@@ -69,8 +69,15 @@ a:hover {
     justify-content: space-between;
 }
 
-button {
-    width: 160px;
+.buttons {
+    display: flex;
+}
+
+.contact {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    width: 170px;
     height: 40px;
     background: #000;
     color: #fff;
@@ -80,11 +87,28 @@ button {
     font-size: 14px;
     text-decoration: none;
     border: none;
-    font-family: 'Golos Text', sans-serif;
+    font-family: 'Golos Text', sans-serif; 
 }
 
 .works {
+    display: block;
+    text-align: center;
+    line-height: 36px;
+    width: 160px;
+    height: 36px;
+    background: #000;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Golos Text', sans-serif;
     background-color: #fff;
     border: 2px solid #000;
     color: #000;
+}
+
+.works:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
 }
