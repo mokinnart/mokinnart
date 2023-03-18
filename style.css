@@ -14,19 +14,19 @@ body {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 p {
     margin: 0;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 a {
     text-decoration: none;
     color: #000;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .behance:hover {
@@ -75,7 +75,7 @@ a {
 }
 
 .freelance a:hover {
-    color: #86ff90;
+    color: #30ab3a;
 }
 
 .data {
@@ -91,14 +91,15 @@ a {
 .contact {
     display: block;
     text-align: center;
-    line-height: 40px;
-    width: 170px;
-    height: 40px;
+    line-height: 30px;
+    width: 140px;
+    height: 30px;
     background: #000;
     color: #fff;
     border-radius: 100px;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
+    margin-right: 10px;
 }
 
 .contact:hover {
@@ -114,11 +115,11 @@ a.telegram {
 .works {
     display: block;
     text-align: center;
-    line-height: 36px;
-    width: 160px;
-    height: 36px;
+    line-height: 26px;
+    width: 136px;
+    height: 26px;
     border-radius: 100px;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
     background-color: #fff;
     border: 2px solid #000;
@@ -126,10 +127,10 @@ a.telegram {
 }
 
 .works:hover {
-    background-color: #636363;
+    background-color: #000;
     color: #fff;
     text-decoration: none;
-    border: 2px solid #636363;
+    border: 2px solid #000;
 }
 
 @media screen and (max-width: 768px) {
