@@ -42,7 +42,7 @@ a {
 }
 
 .left {
-    margin: 20px 0;
+    margin: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,7 +58,7 @@ a {
 }
 
 .right {
-    margin: 20px 0;
+    margin: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -137,7 +137,7 @@ a.telegram {
     .container {
         max-width: 700px;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 0 40px;
         min-height: 100vh;
     }
@@ -155,7 +155,7 @@ a.telegram {
     }
 
     .freelance {
-        margin: 0;
+        display: none;
     }
 
     h1 {
@@ -173,7 +173,7 @@ a.telegram {
     }
 
     .right {
-        min-height: 80vh;
+        min-height: 60vh;
         margin-bottom: 40px;
         display: flex;
         flex-direction: column;
