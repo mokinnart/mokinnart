@@ -24,20 +24,24 @@ p {
 }
 
 a {
+    transition: 800ms;
     text-decoration: none;
     color: #000;
     font-size: 12px;
 }
 
 .behance:hover {
+    transition: 800ms;
     color: #4176FA;
 }
 
 .dribbble:hover {
+    transition: 800ms;
     color: #F26798;
 }
 
 .telegram:hover {
+    transition: 800ms;
     color: #37AEE2;
 }
 
@@ -75,6 +79,7 @@ a {
 }
 
 .freelance a:hover {
+    transition: 800ms;
     color: #30ab3a;
 }
 
@@ -89,6 +94,7 @@ a {
 }
 
 .contact {
+    transition: 800ms;
     display: block;
     text-align: center;
     line-height: 30px;
@@ -103,6 +109,7 @@ a {
 }
 
 .contact:hover {
+    transition: 800ms;
     text-decoration: none;
     background-color: #636363;
     color: #fff;
@@ -113,6 +120,7 @@ a.telegram {
 }
 
 .works {
+    transition: 800ms;
     display: block;
     text-align: center;
     line-height: 26px;
@@ -127,6 +135,7 @@ a.telegram {
 }
 
 .works:hover {
+    transition: 800ms;
     background-color: #000;
     color: #fff;
     text-decoration: none;
