@@ -102,7 +102,7 @@ a {
     display: block;
     text-align: center;
     line-height: 30px;
-    width: 100px;
+    width: 80px;
     height: 30px;
     background: #000;
     color: #fff;
@@ -128,7 +128,7 @@ a.telegram {
     display: block;
     text-align: center;
     line-height: 26px;
-    width: 96px;
+    width: 76px;
     height: 26px;
     border-radius: 100px;
     font-size: 12px;
@@ -217,20 +217,5 @@ a.telegram {
 
     .logo {
         margin-bottom: 10px;
-    }
-
-    .contact {
-        width: 140px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 12px;
-    }
-
-    .works {
-        width: 140px;
-        height: 26px;
-        line-height: 26px;
-        font-size: 12px;
-
     }
 }
