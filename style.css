@@ -98,7 +98,6 @@ a {
 }
 
 .contact {
-    transition: 800ms;
     display: block;
     text-align: center;
     line-height: 30px;
@@ -113,18 +112,6 @@ a {
 }
 
 .contact:hover {
-    transition: 800ms;
-    text-decoration: none;
-    background-color: #636363;
-    color: #fff;
-}
-
-a.telegram {
-    margin: 0;
-}
-
-.works {
-    transition: 800ms;
     display: block;
     text-align: center;
     line-height: 26px;
@@ -138,8 +125,25 @@ a.telegram {
     color: #000;
 }
 
+a.telegram {
+    margin: 0;
+}
+
+.works {
+    display: block;
+    text-align: center;
+    line-height: 26px;
+    width: 96px;
+    height: 26px;
+    border-radius: 100px;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
 .works:hover {
-    transition: 800ms;
     background-color: #000;
     color: #fff;
     text-decoration: none;
