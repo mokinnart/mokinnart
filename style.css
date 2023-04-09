@@ -8,42 +8,68 @@ body {
 .container {
     margin: 0px auto;
     min-height: 100vh;
-    max-width: 1024px;
+    max-width: 1280px;
     display: flex;
     justify-content: space-around;
 }
 
 h1 {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 24;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 p {
     margin: 0;
-    font-size: 12px;
+    font-size: 16;
     color: #5c5c5c;
 }
 
 a {
-    transition: 800ms;
+    font-weight: 500;
+    transition: 400ms;
     text-decoration: none;
     color: #000;
-    font-size: 12px;
+    font-size: 16;
+}
+
+a:hover {
+    transition: 400ms;
+    color: #aaaaaa;
+}
+
+.designer:hover {
+    transition: 400ms;
+    color: #4176FA;  
+}
+
+.freelance:hover {
+    transition: 400ms;
+    color: #29e47a;
 }
 
 .behance:hover {
-    transition: 800ms;
+    transition: 400ms;
     color: #4176FA;
 }
 
 .dribbble:hover {
-    transition: 800ms;
+    transition: 400ms;
     color: #F26798;
 }
 
 .telegram:hover {
-    transition: 800ms;
+    transition: 400ms;
     color: #37AEE2;
+}
+
+a .telegram {
+    margin: 0;
 }
 
 .left {
@@ -69,137 +95,77 @@ a {
     justify-content: space-between;
 }
 
-.offer {
-    width: 300px;
+.list {
+    margin-bottom: 60px;
+}
+
+.content {
+    width: 400px;
+    margin-top: 80px;
+    margin-bottom: 80px; 
+}
+
+.process {
+    width: 400px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.aboutme {
+    width: 400px;
+    margin-top: 80px;
+    margin-bottom: 20px; 
+}
+
+.works {
+    width: 400px;
+    margin-top: 80px;
+    margin-bottom: 80px;  
+}
+
+.work {
+    margin-bottom: 80px;
+}
+
+.cover {
+    width: 400px;
+    border-radius: 10px;
+    transition: 400ms;
+    margin-bottom: 10px;
+}
+
+.cover:hover {
+    filter: brightness(70%);
+    transition: 400ms;
 }
 
 .about {
     margin-bottom: 20px;
 }
 
-.freelance {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.freelance a:hover {
-    transition: 800ms;
-    color: #30ab3a;
-}
-
-.data {
-    display: flex;
-    justify-content: space-between;
-}
-
-.buttons {
-    display: flex;
-    justify-content: start;
-}
-
-.contact {
-    transition: 800ms;
-    display: block;
-    text-align: center;
-    line-height: 30px;
-    width: 100px;
-    height: 30px;
-    background: #000;
-    color: #fff;
-    border-radius: 100px;
-    font-size: 12px;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.contact:hover {
-    transition: 800ms;
-    background: #5c5c5c;
-}
-
-a.telegram {
-    margin: 0;
-}
-
-.works {
-    transition: 800ms;
-    display: block;
-    text-align: center;
-    line-height: 26px;
-    width: 96px;
-    height: 26px;
-    border-radius: 100px;
-    font-size: 12px;
-    text-decoration: none;
-    background-color: #fff;
-    border: 2px solid #000;
-    color: #000;
-}
-
-.works:hover {
-    transition: 800ms;
-    background: #000;
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid #000;
-}
-
 @media screen and (max-width: 768px) {
     .container {
         max-width: 700px;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0 40px;
-        min-height: 100vh;
     }
 
     .left {
-        margin-top: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .links {
-        display: flex;
-        justify-content: start;
-    }
-
-    .freelance {
         display: none;
-    }
-
-    h1 {
-        margin: 0;
-        margin-bottom: 20px;
-    }
-
-    .buttons {
-        display: flex;
-        justify-content: start;
-    }
-
-    .contact {
-        margin-right: 10px;
-    }
-
-    .right {
-        min-height: 60vh;
-        margin-bottom: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
   }  
 
 @media screen and (max-width: 480px) {
     .container {
-        max-width: 450px;
+        max-width: 440px;
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     p {
@@ -208,13 +174,5 @@ a.telegram {
 
     a {
         font-size: 12px;
-    }
-
-    .right {
-        margin: 20px 0;
-    }
-
-    .logo {
-        margin-bottom: 10px;
     }
 }
