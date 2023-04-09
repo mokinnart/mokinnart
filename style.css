@@ -27,7 +27,7 @@ h3 {
 p {
     margin: 0;
     font-size: 16;
-    color: #5c5c5c;
+    color: #aaaaaa;
 }
 
 a {
@@ -111,6 +111,12 @@ a .telegram {
     margin-bottom: 80px;
 }
 
+.avatar {
+    width: 120px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
 .aboutme {
     width: 400px;
     margin-top: 80px;
@@ -174,5 +180,29 @@ a .telegram {
 
     a {
         font-size: 12px;
+    }
+
+    .content {
+        width: 300px;
+        margin-top: 80px;
+        margin-bottom: 80px; 
+    }
+    
+    .process {
+        width: 300px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .aboutme {
+        width: 300px;
+        margin-top: 80px;
+        margin-bottom: 20px; 
+    }
+    
+    .works {
+        width: 300px;
+        margin-top: 80px;
+        margin-bottom: 80px;  
     }
 }
