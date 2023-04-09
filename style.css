@@ -114,6 +114,7 @@ a .telegram {
 .avatar {
     width: 120px;
     border-radius: 100px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -200,6 +201,13 @@ a .telegram {
         margin-bottom: 20px; 
     }
     
+    .cover {
+        width: 300px;
+        border-radius: 10px;
+        transition: 400ms;
+        margin-bottom: 10px;
+    }
+
     .works {
         width: 300px;
         margin-top: 80px;
