@@ -2,7 +2,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
     font-family: 'Golos Text', sans-serif;
+
+    background-color: #F5F5F5;
+    color: #3b3b3b;
 }
 
 .container {
@@ -15,26 +19,24 @@ body {
 
 h1 {
     font-size: 24;
-    font-weight: bold;
-    margin-top: 0;
+    margin: 0 0 10 0;
 }
 
 h3 {
-    margin: 0;
-    margin-bottom: 5px;
+    margin: 0 0 5 0;
 }
 
 p {
     margin: 0;
     font-size: 16;
-    color: #aaaaaa;
+    color: #3b3b3b;
 }
 
 a {
     font-weight: 500;
     transition: 400ms;
     text-decoration: none;
-    color: #000;
+    color: #3b3b3b;
     font-size: 16;
 }
 
@@ -42,6 +44,46 @@ a:hover {
     transition: 400ms;
     color: #aaaaaa;
 }
+
+/* left block */
+
+.left {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts a {
+    margin-right: 20px;
+}
+
+.contacts a:last-child {
+    margin-right: 0;
+}
+
+/* right block */
+
+.right {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3b3b3b;
+}
+
+/* index */
 
 .designer:hover {
     transition: 400ms;
@@ -53,57 +95,38 @@ a:hover {
     color: #29e47a;
 }
 
-.behance:hover {
-    transition: 400ms;
-    color: #4176FA;
-}
-
-.dribbble:hover {
-    transition: 400ms;
-    color: #F26798;
-}
-
-.telegram:hover {
-    transition: 400ms;
-    color: #37AEE2;
-}
-
-a .telegram {
-    margin: 0;
-}
-
-.left {
-    margin: 40px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.links {
-    display: flex;
-    justify-content: space-between;
-}
-
-.links a {
-    margin-right: 20px;
-}
-
-.right {
-    margin: 40px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.list {
-    margin-bottom: 60px;
-}
-
-.content {
+.offer {
     width: 400px;
     margin-top: 80px;
     margin-bottom: 80px; 
 }
+
+.offer p {
+    margin-bottom: 20px;
+}
+
+/* about */
+
+.about {
+    width: 400px;
+    margin-top: 80px;
+    margin-bottom: 20px; 
+}
+
+.skills {
+    margin-bottom: 60px;
+}
+
+.about img {
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.title {
+    margin: 40px 0 10px 0;
+}
+
+/* process */
 
 .process {
     width: 400px;
@@ -111,18 +134,7 @@ a .telegram {
     margin-bottom: 80px;
 }
 
-.avatar {
-    width: 120px;
-    border-radius: 100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.aboutme {
-    width: 400px;
-    margin-top: 80px;
-    margin-bottom: 20px; 
-}
+/* works */
 
 .works {
     width: 400px;
@@ -144,16 +156,6 @@ a .telegram {
 .cover:hover {
     filter: brightness(70%);
     transition: 400ms;
-}
-
-.about {
-    margin-bottom: 20px;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 @media screen and (max-width: 768px) {
