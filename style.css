@@ -187,37 +187,37 @@ a:hover {
     }
 
     .about img {
-        width: 400px;
+        width: 380px;
         margin-bottom: 40px;
     }
 
     .offer {
-        width: 400px;
+        width: 380px;
         margin-top: 80px;
         margin-bottom: 80px; 
     }
     
     .process {
-        width: 400px;
+        width: 380px;
         margin-top: 80px;
         margin-bottom: 80px;
     }
 
     .about {
-        width: 400px;
+        width: 380px;
         margin-top: 80px;
         margin-bottom: 20px; 
     }
     
     .cover {
-        width: 400px;
+        width: 380px;
         border-radius: 10px;
         transition: 400ms;
         margin-bottom: 10px;
     }
 
     .works {
-        width: 400px;
+        width: 380px;
         margin-top: 80px;
         margin-bottom: 80px;  
     }
