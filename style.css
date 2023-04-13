@@ -186,6 +186,11 @@ a:hover {
         font-size: 12px;
     }
 
+    .about img {
+        width: 300px;
+        margin-bottom: 40px;
+    }
+
     .offer {
         width: 300px;
         margin-top: 80px;
