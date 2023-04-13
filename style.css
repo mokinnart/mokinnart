@@ -171,7 +171,7 @@ a:hover {
 
 @media screen and (max-width: 480px) {
     .container {
-        max-width: 440px;
+        max-width: 460px;
     }
 
     h1 {
@@ -187,37 +187,37 @@ a:hover {
     }
 
     .about img {
-        width: 300px;
+        width: 400px;
         margin-bottom: 40px;
     }
 
     .offer {
-        width: 300px;
+        width: 400px;
         margin-top: 80px;
         margin-bottom: 80px; 
     }
     
     .process {
-        width: 300px;
+        width: 400px;
         margin-top: 80px;
         margin-bottom: 80px;
     }
 
     .about {
-        width: 300px;
+        width: 400px;
         margin-top: 80px;
         margin-bottom: 20px; 
     }
     
     .cover {
-        width: 300px;
+        width: 400px;
         border-radius: 10px;
         transition: 400ms;
         margin-bottom: 10px;
     }
 
     .works {
-        width: 300px;
+        width: 400px;
         margin-top: 80px;
         margin-bottom: 80px;  
     }
