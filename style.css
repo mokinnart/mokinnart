@@ -52,6 +52,7 @@ a {
 	text-decoration: none;
 
 }
+
 .item:after {
 	display: block;
 	position: absolute;
@@ -99,6 +100,7 @@ a {
 	text-decoration: none;
 
 }
+
 .info a:after {
 	display: block;
 	position: absolute;
@@ -191,6 +193,7 @@ a {
 	text-decoration: none;
 
 }
+
 .footer a:after {
 	display: block;
 	position: absolute;
@@ -206,7 +209,6 @@ a {
 .footer a:focus:after {
 	width: 0%;
 }
-
 
 .footer {
     display: flex;
@@ -312,4 +314,3 @@ a {
         display: none;
     }
 }
-
