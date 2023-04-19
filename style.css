@@ -43,7 +43,7 @@ a {
     z-index: 1000;
 }
 
-.header a {
+.item {
 	position: relative;
     letter-spacing: -1px;
 	color: #000;
@@ -52,7 +52,7 @@ a {
 	text-decoration: none;
 
 }
-.header a:after {
+.item:after {
 	display: block;
 	position: absolute;
 	left: 0;
@@ -63,8 +63,8 @@ a {
 	transition: width 0.3s ease-out;
 }
 
-.header a:hover:after,
-.header a:focus:after {
+.item:hover:after,
+.item:focus:after {
 	width: 100%;
 }
 
@@ -104,7 +104,7 @@ a {
 	position: absolute;
 	left: 0;
 	width: 100%;
-    height: 0.9px;
+    height: 1px;
 	background-color: #000;
 	content: "";
 	transition: width 0.3s ease-out;
@@ -261,6 +261,15 @@ a {
 }  
 
 @media screen and (max-width: 480px) {
+    body {
+        padding: 0 15px;
+    }
+
+    .header {
+        right: 15px;
+        left: 15px;
+    }
+
     p {
         font-size: 14px;
     }
