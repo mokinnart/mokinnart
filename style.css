@@ -157,15 +157,24 @@ a {
 
 .cover {
     width: 100%;
-    transition: 400ms;
-    margin-bottom: 5px;
-    transition: 400ms;
+}
+
+.cover-link {
+    margin-bottom: 10px;
+    transition: 800ms;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+}
+   
+.cover {
+    transition: 800ms;
+    display: block;
 }
 
 .cover:hover {
-    filter: brightness(70%);
-    transition: 400ms;
-}
+    transform: scale(1.1);
+}   
 
 /* about */
 
@@ -234,6 +243,10 @@ a {
 
     .about div {
         margin-bottom: 40px;
+    }
+
+    .cover:hover {
+        transform: scale(1);
     }
 }
 
