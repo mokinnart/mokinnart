@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
+    <!-- метатэги -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- фавиконки -->
+
     <link rel="icon" href="/images/favicon.png" sizes="any">
     <link rel="icon" href="/images/favicon.png" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/images/favicon.png">
     <link rel="manifest" href="/manifest.webmanifest">
+
+    <!-- шрифт -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- стили -->
+    
     <link rel="stylesheet" href="style.css">
+    
     <title>Артём Мокин — Дизайнер интерфейсов</title>
 </head>
+
 <body>
     <div class="container">
-        <header class="header">
+
+        <header>
             <a class="logo" href="#info"><img src="/images/favicon.png"></a>
-            <div>
-                <a class="item" href="#works">Портфолио,</a>
-                <a class="item" href="#about">Информация,</a>
-                <a class="item" href="#footer">Контакты.</a>
-            </div>
+
+            <span>
+                <a class="item" href="#works">Портфолио</a>,
+                <a class="item" href="#about">Информация</a>,
+                <a class="item" href="#footer">Контакты</a>.
+            </span>
+
         </header>
+
         <section class="info" id="info">
             <p>
                 Я Артём Мокин —<br>
@@ -31,10 +49,12 @@
                 Делаю ориентированный<br>
                 на человека продукт<br>
                 с фокусом на минимализм и<br>
-                функциональность.<br>
+                функциональность.
             </p>
-            <a target="_blank" href="http://t.me/mokinnart">доступен для проектов</a>
+
+            <a target="_blank" href="http://t.me/mokinnart">обсудить проект</a>
         </section>
+
         <section class="works" id="works">
             <div class="row">
                 <div class="work">
@@ -46,7 +66,6 @@
                         <span class="tags">Интерфейсы, Брендинг</span>
                     </a>
                 </div>
-
                 <div class="work">
                     <a class="cover-link" href="https://www.behance.net/gallery/168438975/Website-branding-for-directoreditor-Danil-Kaltashev" target="_blank">    
                         <img class="cover" src="/images/danilkaltashev.png">
@@ -69,6 +88,7 @@
                 </div> 
             </div>
         </section>
+
         <section class="about" id="about">
             <div>
                 <p class="title">
@@ -113,14 +133,19 @@
                 </p>
             </div>
         </section>
-        <footer class="footer" id="footer">
+
+        <footer id="footer">
             <span>
-                <a href="mailto:mokinnart@gmail.com">Email,</a>
-                <a target="_blank" href="https://www.behance.net/mokinnart">Behance,</a>
-                <a target="_blank" href="http://t.me/mokinnart">Telegram.</a>
+                <a class="mail" href="mailto:mokinnart@gmail.com">mokinnart@gmail.com</a>
+                <span class="social">
+                    <a target="_blank" href="https://dprofile.ru/mokinnart">Dprofile</a>,
+                    <a target="_blank" href="https://www.behance.net/mokinnart">Behance</a>,
+                    <a target="_blank" href="http://t.me/mokinnart">Telegram</a>.
+                </span>
             </span>
             <p>mokinnart, 2023</p>
         </footer>
+
     </div>
 </body>
 </html>
