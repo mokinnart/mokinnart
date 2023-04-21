@@ -43,6 +43,10 @@ a {
     z-index: 1000;
 }
 
+.logo img {
+    height: 40px;
+}
+
 .item {
 	position: relative;
     letter-spacing: -1px;
