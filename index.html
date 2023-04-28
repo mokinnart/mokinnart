@@ -6,7 +6,8 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     
     <!-- фавиконки -->
 
@@ -32,61 +33,71 @@
     <div class="container">
 
         <header>
-            <a class="logo" href="#info"><img src="/images/favicon.png"></a>
-
-            <span>
-                <a class="item" href="#works">Портфолио</a>,
-                <a class="item" href="#about">Информация</a>,
-                <a class="item" href="#footer">Контакты</a>.
-            </span>
-
+            <div class="logo">
+                <p style="color: #000;">mokinnart</p>
+            </div>
+            <div class="nav">
+                <a class="item" href="#works">Кейсы</a>
+                <a class="item" href="#about">Информация</a>
+                <a class="item" href="#footer">Контакты</a>
+            </div>
         </header>
 
-        <section class="info" id="info">
-            <p>
-                Я Артём Мокин —<br>
-                дизайнер интерфейсов.<br>
-                Делаю ориентированный<br>
-                на человека продукт<br>
-                с фокусом на минимализм и<br>
-                функциональность.
-            </p>
+        <section class="works" id="works"> 
+            <div class="work">
+                <a class="cover-link" href="https://www.behance.net/gallery/168686803/Runway-Stars" target="_blank">
+                    <img class="cover" src="/images/runwaystars.jpg">
+                </a>
 
-            <a target="_blank" href="http://t.me/mokinnart">обсудить проект</a>
-        </section>
+                <div class="description">
+                    <p class="year">2023</p>
 
-        <section class="works" id="works">
-            <div class="row">
-                <div class="work">
-                    <a class="cover-link" href="https://www.behance.net/gallery/168686803/Runway-Stars" target="_blank">
-                        <img class="cover" src="/images/runwaystars.jpg">
-                    </a><br><br>
-                    <a href="https://www.behance.net/gallery/168686803/Runway-Stars" target="_blank">
-                        <span class="name">Runway Stars</span><br>
-                        <span class="tags">Интерфейсы, Брендинг</span>
-                    </a>
+                    <div class="work-name">
+                        <a class="work-link" href="https://www.behance.net/gallery/168686803/Runway-Stars" target="_blank">
+                            Runway Stars — сайт модельного агентства<br>
+                        </a>
+                        <p class="tags">
+                            брендгинг • дизайн • разработка
+                        </p>
+                    </div>
                 </div>
-                <div class="work">
-                    <a class="cover-link" href="https://www.behance.net/gallery/168438975/Website-branding-for-directoreditor-Danil-Kaltashev" target="_blank">    
-                        <img class="cover" src="/images/danilkaltashev.png">
-                    </a><br><br>
-                    <a href="https://www.behance.net/gallery/168438975/Website-branding-for-directoreditor-Danil-Kaltashev" target="_blank">
-                        <span class="name">Калташёв Данил — Режиссёр</span><br>
-                        <span class="tags">Интерфейсы, Брендинг, Разработка</span>
-                    </a>
-                </div> 
             </div>
-            <div class="row">
-                <div class="work">
-                    <a class="cover-link" href="https://www.behance.net/gallery/166588945/Landing-page-concept-CRL-Europe" target="_blank">
-                        <img class="cover" src="/images/crl.jpg">
-                    </a><br><br>
-                    <a href="https://www.behance.net/gallery/166588945/Landing-page-concept-CRL-Europe" target="_blank">
-                        <span class="name">CRL Europe</span><br>
-                        <span class="tags">Интерфейсы, Брендинг</span>
-                    </a>
-                </div> 
+            <div class="work">
+                <a class="cover-link" href="https://www.behance.net/gallery/168438975/Website-branding-for-directoreditor-Danil-Kaltashev" target="_blank">
+                    <img class="cover" src="/images/danilkaltashev.png">
+                </a>
+
+                <div class="description">
+                    <p class="year">2023</p>
+
+                    <div class="work-name">
+                        <a class="work-link" href="https://www.behance.net/gallery/168438975/Website-branding-for-directoreditor-Danil-Kaltashev" target="_blank">
+                            Калташёв Данил — сайт-портфолио режиссёра/монтажёра<br>
+                        </a>
+                        <p class="tags">
+                            брендгинг • дизайн • разработка
+                        </p>
+                    </div>
+                </div>
             </div>
+            <div class="work">
+                <a class="cover-link" href="https://www.behance.net/gallery/166588945/Landing-page-concept-CRL-Europe" target="_blank">
+                    <img class="cover" src="/images/crl.jpg">
+                </a>
+
+                <div class="description">
+                    <p class="year">2023</p>
+
+                    <div class="work-name">
+                        <a class="work-link" href="https://www.behance.net/gallery/166588945/Landing-page-concept-CRL-Europe" target="_blank">
+                            CRL Europe — сайт строительной компании<br>
+                        </a>
+                        <p class="tags">
+                            брендгинг • дизайн • разработка
+                        </p>
+                    </div>
+                </div>
+            </div> 
         </section>
 
         <section class="about" id="about">
@@ -95,55 +106,57 @@
                     Дизайнер
                 </p>
                 <p>
-                    Занимаюсь разработкой функциональных,<br>
-                    технологичных и минималистичных<br>
-                    дизайн-решений для компаний и авторов,<br>
-                    которые ценят развитие своего бренда и<br>
-                    видят в нем перспективу.
+                    Я Артём Мокин — дизайнер интерфейсов.<br>
+                    Делаю ориентированный на человека продукт<br>
+                    с фокусом на минимализм и функциональность.
                 </p>
             </div>
             
             <div>
-                <p class="title">
-                    Опыт
-                </p>
-                <p>
-                    Frontend-разработчик<br>Фриланс<br>06.2021 — 06.2022<br><br>
-                    Графический дизайнер<br>Фриланс<br>07.2022 — 11.2022<br><br>
-                    UX/UI дизайнер<br>Фриланс<br>02.2023 — Настоящее время
-                </p>
-            </div>
-
-            <div>
-                <p class="title">
-                    Навыки
-                </p>    
-                <p>    
-                    Пользовательские исследования<br>
-                    Прототипирование<br>
-                    Визуальный дизайн<br>
-                    Информационная архитектура<br>
-                    Дизайн система<br>
-                    Юзабилити<br>
-                    <br>
-                    Figma<br>
-                    Jira<br>
-                    Adobe AI, PS<br>
-                    HTML/CSS
-                </p>
+                <div class="experience">
+                    <p class="title">
+                        Опыт
+                    </p>
+                    <p>
+                        Frontend-разработчик • Фриланс • 06.2021 — 06.2022<br>
+                        Графический дизайнер • Фриланс • 07.2022 — 11.2022<br>
+                        UX/UI дизайнер • Фриланс • 02.2023 — Настоящее время
+                    </p>
+                </div>
+                <div>
+                    <p class="title">
+                        Навыки
+                    </p>    
+                    <div class="skills"> 
+                        <p>
+                            Пользовательские исследования<br>
+                            Прототипирование<br>
+                            Визуальный дизайн<br>
+                            Информационная архитектура<br>
+                            Дизайн система<br>
+                            Юзабилити<br>
+                        </p>
+                        <p>
+                            Figma<br>
+                            Jira<br>
+                            Adobe AI, PS<br>
+                            HTML/CSS
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <footer id="footer">
-            <span>
+            <div class="contacts">
                 <a class="mail" href="mailto:mokinnart@gmail.com">mokinnart@gmail.com</a>
-                <span class="social">
-                    <a target="_blank" href="https://dprofile.ru/mokinnart">Dprofile</a>,
-                    <a target="_blank" href="https://www.behance.net/mokinnart">Behance</a>,
-                    <a target="_blank" href="http://t.me/mokinnart">Telegram</a>.
-                </span>
-            </span>
-            <p>mokinnart, 2023</p>
+                <div class="social">
+                    <a target="_blank" href="https://dprofile.ru/mokinnart">Dprofile</a>
+                    <a target="_blank" href="https://www.behance.net/mokinnart">Behance</a>
+                    <a target="_blank" href="http://t.me/mokinnart">Telegram</a>
+                </div>
+            </div>
+            <p class="copyright">mokinnart, 2023</p>
         </footer>
 
     </div>
