@@ -49,8 +49,8 @@ header {
     
     position: fixed;
     top: 0px;
-    right: 2%;
-    left: 2%;
+    right: 3%;
+    left: 3%;
 
     background-color: #fff;
     z-index: 1000;
@@ -69,6 +69,10 @@ header {
 
 .nav a {
     margin-right: 20px;
+}
+
+.nav a:last-child {
+    margin-right: 0;
 }
 
 /* works */
@@ -212,17 +216,13 @@ footer p {
 }
 
 @media screen and (max-width: 1024px) {
+    header {
+        grid-gap: 0px;
+    }
+
     .works {
         display: grid;
         grid-template-columns: 100%;
-    }
-
-    .about {
-        
-    }
-
-    .about div {
-        margin-bottom: 40px;
     }
 
     .cover:hover {
@@ -237,15 +237,6 @@ footer p {
 }  
 
 @media screen and (max-width: 480px) {
-    body {
-        padding: 0 15px;
-    }
-
-    header {
-        right: 15px;
-        left: 15px;
-    }
-
     footer {
         align-items: end;
         height: 60px;
