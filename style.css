@@ -218,6 +218,7 @@ footer p {
 
 .work-page {
     width: 100%;
+    margin-bottom: 80px;
 }
 
 .work-cover img {
@@ -229,6 +230,10 @@ footer p {
     grid-template-columns: 1fr 1fr;  
     grid-gap: 20px;
     margin-bottom: 20px;
+}
+
+.work-image img {
+    width: 100%;
 }
 
 .work-images img {
@@ -254,6 +259,18 @@ footer p {
     .about {
         grid-template-columns: 100%;  
     }
+
+    .work-page {
+        margin-top: 80px;
+    }
+
+    .work-images {
+        display: grid;
+        grid-template-columns: 1fr;  
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
+    
 }  
 
 @media screen and (max-width: 480px) {
