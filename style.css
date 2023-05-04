@@ -218,6 +218,7 @@ footer p {
 
 .work-page {
     width: 100%;
+    margin-top: 40px;
     margin-bottom: 80px;
 }
 
@@ -229,6 +230,10 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr;  
     grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.work-image {
     margin-bottom: 20px;
 }
 
