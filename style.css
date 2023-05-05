@@ -189,6 +189,10 @@ header {
     margin-left: 20px;
 }
 
+.social a:first-child {
+    margin-left: 0;
+}
+
 footer {
     height: 40px;
 
@@ -286,12 +290,11 @@ footer p {
     }
 
     .contacts {
-        align-items: end;
+        align-items: start;
+        flex-direction: column;
     }
 
-    .social {
-        align-items: start;
-        justify-content: start;
-        flex-direction: column;
+    .mail {
+        display: none;
     }
 }
