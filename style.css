@@ -96,8 +96,8 @@ header .telegram {
   background-color: #577693;
   color: #f1f1f1;
   width: 7em;
-  height: 30px;
-  line-height: 30px;
+  height: 2em;
+  line-height: 2em;
   text-align: center;
   border-radius: 100px;
 }
