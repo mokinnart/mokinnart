@@ -1,15 +1,15 @@
-* {
+html {
   scroll-behavior: smooth;
 }
 
 *::-moz-selection {
-  background-color: #212121;
-  color: #fff;
+  background-color: #577693;
+  color: #f1f1f1;
 }
 
 *::selection {
-  background-color: #212121;
-  color: #fff;
+  background-color: #577693;
+  color: #f1f1f1;
 }
 
 body {
@@ -20,19 +20,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: #f1f1f1;
   overflow-x: hidden;
-  animation: 2s show ease;
 }
 
-@keyframes show {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .container {
   margin: 0 auto;
   width: 98%;
@@ -41,13 +32,13 @@ body {
 p, a {
   margin: 0;
   padding: 0;
-  color: #212121;
+  color: #999;
   text-decoration: none;
   transition: 0.5s;
 }
 
 a:hover {
-  color: #999;
+  color: #577693;
   transition: 0.5s;
 }
 
@@ -55,7 +46,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1%;
-  background-color: #fff;
+  background-color: #f1f1f1;
   height: 4vw;
   position: fixed;
   top: 0;
@@ -65,7 +56,7 @@ header {
   align-items: center;
 }
 header .logo a {
-  color: #212121;
+  color: #999;
 }
 header .nav a {
   margin-right: 2%;
@@ -85,6 +76,7 @@ header .telegram {
   width: 100%;
   padding-top: 4vw;
   margin-bottom: 200px;
+  animation: 2s show ease;
 }
 .works .work, .works .cover {
   width: 100%;
@@ -94,6 +86,21 @@ header .telegram {
   display: inline-block;
   overflow: hidden;
   margin-bottom: 1%;
+  position: relative;
+}
+.works .work .cover-link .txt, .works .cover .cover-link .txt {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  background-color: #577693;
+  color: #f1f1f1;
+  font-size: 0.9vw;
+  width: 6vw;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 100px;
 }
 .works .work .cover-link .cover, .works .cover .cover-link .cover {
   transition: 500ms;
@@ -104,12 +111,20 @@ header .telegram {
   transform: scale(1.03);
 }
 .works .work .work-link, .works .cover .work-link {
-  color: #212121;
-}
-.works .work .work-link:hover, .works .cover .work-link:hover {
   color: #999;
 }
+.works .work .work-link:hover, .works .cover .work-link:hover {
+  color: #577693;
+}
 
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -118,16 +133,13 @@ header .telegram {
   padding-top: 4vw;
 }
 .about .title {
-  color: #999;
+  font-style: italic;
 }
 .about .text {
   width: 90%;
 }
 .about .lists {
   width: 90%;
-  display: flex;
-  align-self: start;
-  justify-content: space-between;
 }
 
 footer {
@@ -142,56 +154,10 @@ footer .social a {
   margin-right: 2%;
 }
 footer .mail {
-  color: #212121;
+  color: #999;
 }
 footer .copyright {
   justify-self: end;
-}
-
-.work-page {
-  width: 100%;
-  margin-top: 40px;
-  margin-bottom: 80px;
-}
-
-.cover-link {
-  position: relative;
-}
-
-.cover {
-  width: 100%;
-}
-
-.txt {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 100;
-  background-color: #fff;
-  width: 7em;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 100px;
-}
-
-.work-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  margin-bottom: 20px;
-}
-
-.work-image {
-  margin-bottom: 20px;
-}
-
-.work-image img {
-  width: 100%;
-}
-
-.work-images img {
-  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {

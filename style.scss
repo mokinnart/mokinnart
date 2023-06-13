@@ -1,7 +1,7 @@
 $font-stack: 'Golos Text', sans-serif;
-$primary-color: #212121;
-$background-color: #fff;
-$hover-color: #999;
+$primary-color: #999;
+$background-color: #f1f1f1;
+$hover-color: #577693;
 
 @mixin grid {
     display: grid;
@@ -10,7 +10,7 @@ $hover-color: #999;
 }
 
 @mixin selection {
-    background-color: $primary-color;
+    background-color: $hover-color;
     color: $background-color;
 }
 
@@ -21,7 +21,7 @@ $hover-color: #999;
     letter-spacing: -0.05em;
 }
 
-* { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; }
 
 *::-moz-selection { @include selection; }
 *::selection { @include selection; }
@@ -33,12 +33,6 @@ body {
     box-sizing: border-box;
     background-color: $background-color;
     overflow-x: hidden;
-    animation: 2s show ease;
-}
-
-@keyframes show {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 .container {
@@ -90,6 +84,21 @@ header {
             display: inline-block;
             overflow: hidden;
             margin-bottom: 1%;
+            position: relative;
+            .txt {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 100;
+                background-color: $hover-color;
+                color: $background-color;
+                font-size: 0.9vw;
+                width: 6vw;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                border-radius: 100px;
+            }
             .cover {
                 transition: 500ms;
                 display: block;
@@ -104,19 +113,24 @@ header {
             &:hover { color: $hover-color; }
         }
     }
+    animation: 2s show ease;
+}
+
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .about {
     @include grid;
     margin-bottom: 200px;
     padding-top: 4vw;
-    .title { color: $hover-color; }
-    .text { width: 90%; }
+    .title { font-style: italic; }
+    .text {
+        width: 90%;
+    }
     .lists {
         width: 90%;
-        display: flex;
-        align-self: start;
-        justify-content: space-between;
     }
 }
 
@@ -128,51 +142,6 @@ footer {
     .social a { margin-right: 2%; }
     .mail { color: $primary-color; }
     .copyright { justify-self: end; }
-}
-
-.work-page {
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 80px;
-}
-
-.cover-link {
-    position: relative;
-}
-
-.cover {
-    width: 100%;
-}
-.txt {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 100;
-    background-color: $background-color;
-    width: 7em;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 100px;
-}
-
-.work-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;  
-    grid-gap: 20px;
-    margin-bottom: 20px;
-}
-
-.work-image {
-    margin-bottom: 20px;
-}
-
-.work-image img {
-    width: 100%;
-}
-
-.work-images img {
-    width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
