@@ -123,9 +123,9 @@ header {
     @include grid;
     margin-bottom: 200px;
     padding-top: 4vw;
-    .title { font-style: italic; }
     .text {
         width: 90%;
+        color: #2e2e2e;
     }
     .lists {
         width: 90%;
@@ -166,6 +166,7 @@ footer {
     
     .about {
         grid-template-columns: 1fr 1fr;
+        .information { margin-bottom: 2em;}
     }
 
     footer {
@@ -199,12 +200,13 @@ footer {
 
     .about {
         grid-template-columns: 100%;
-        margin-bottom: 100px;  
+        margin-bottom: 100px;
+        .information { margin-bottom: 2em;} 
+        .harmony { margin-bottom: 2em;} 
     }
 
     .works {
-        padding: 0;
-        margin-top: 7vw;
+        padding-top: 7vw;
         grid-template-columns: 100%;
         grid-row-gap: 1%;
         margin-bottom: 300px;

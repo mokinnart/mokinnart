@@ -130,11 +130,9 @@ header .telegram {
   margin-bottom: 200px;
   padding-top: 4vw;
 }
-.about .title {
-  font-style: italic;
-}
 .about .text {
   width: 90%;
+  color: #2e2e2e;
 }
 .about .lists {
   width: 90%;
@@ -178,6 +176,9 @@ footer .copyright {
   .about {
     grid-template-columns: 1fr 1fr;
   }
+  .about .information {
+    margin-bottom: 2em;
+  }
   footer {
     grid-template-columns: 1fr 1fr;
   }
@@ -205,9 +206,14 @@ footer .copyright {
     grid-template-columns: 100%;
     margin-bottom: 100px;
   }
+  .about .information {
+    margin-bottom: 2em;
+  }
+  .about .harmony {
+    margin-bottom: 2em;
+  }
   .works {
-    padding: 0;
-    margin-top: 7vw;
+    padding-top: 7vw;
     grid-template-columns: 100%;
     grid-row-gap: 1%;
     margin-bottom: 300px;
