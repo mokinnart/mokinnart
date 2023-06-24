@@ -4,12 +4,12 @@ html {
 
 *::-moz-selection {
   background-color: #577693;
-  color: #f1f1f1;
+  color: #FCFCFC;
 }
 
 *::selection {
   background-color: #577693;
-  color: #f1f1f1;
+  color: #FCFCFC;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f1f1f1;
+  background-color: #FCFCFC;
   overflow-x: hidden;
 }
 
@@ -32,7 +32,7 @@ body {
 p, a {
   margin: 0;
   padding: 0;
-  color: #999;
+  color: #9C9C9C;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -46,7 +46,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1%;
-  background-color: #f1f1f1;
+  background-color: #FCFCFC;
   height: 4vw;
   position: fixed;
   top: 0;
@@ -56,7 +56,7 @@ header {
   align-items: center;
 }
 header .logo a {
-  color: #999;
+  color: #9C9C9C;
 }
 header .nav a {
   margin-right: 2%;
@@ -94,7 +94,7 @@ header .telegram {
   right: 10px;
   z-index: 100;
   background-color: #577693;
-  color: #f1f1f1;
+  color: #FCFCFC;
   display: inline;
   padding: 5px 10px;
   text-align: center;
@@ -109,7 +109,7 @@ header .telegram {
   transform: scale(1.03);
 }
 .works .work .work-link, .works .cover .work-link {
-  color: #999;
+  color: #9C9C9C;
 }
 .works .work .work-link:hover, .works .cover .work-link:hover {
   color: #577693;
@@ -142,6 +142,12 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1%;
+  background-color: #FCFCFC;
+  position: fixed;
+  bottom: 0;
+  right: 1%;
+  left: 1%;
+  z-index: 1000;
   height: 4vw;
   margin: 0;
   align-items: center;
@@ -150,7 +156,7 @@ footer .social a {
   margin-right: 2%;
 }
 footer .mail {
-  color: #999;
+  color: #9C9C9C;
 }
 footer .copyright {
   justify-self: end;
