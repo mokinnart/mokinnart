@@ -5,8 +5,8 @@ $hover-color: #577693;
 
 @mixin grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;  
-    grid-column-gap: 1%;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2%;
 }
 
 @mixin selection {
@@ -16,7 +16,7 @@ $hover-color: #577693;
 
 @mixin font {
     font-family: $font-stack;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     line-height: 120%;
     letter-spacing: -0.05em;
 }
@@ -37,7 +37,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 98%;
+    width: 96%;
 }
 
 p, a {
@@ -59,16 +59,25 @@ header {
     height: 4vw;
     position: fixed;
     top: 0;
-    right: 1%;
-    left: 1%;
+    right: 2%;
+    left: 2%;
     z-index: 1000;
     align-items: center;
     .logo a { color: $primary-color; }
-    .nav a {
-        margin-right: 2%;
-        &:last-child { margin-right: 0; }
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+        .social { 
+            display: flex;
+            justify-content: start;
+            a {
+                margin-right: 10px;
+            }
+        }
     }
-    .telegram { justify-self: end; }
+    .mail { 
+        color: $primary-color; 
+    }
 }
 
 .works {
@@ -76,7 +85,7 @@ header {
     grid-row-gap: 4%;
     width: 100%;
     padding-top: 4vw;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     .work, .cover { 
         width: 100%; 
         .cover-link {
@@ -106,10 +115,6 @@ header {
                 }
             }
         }
-        .work-link {
-            color: $primary-color;   
-            &:hover { color: $hover-color; }
-        }
     }
     animation: 2s show ease;
 }
@@ -121,8 +126,11 @@ header {
 
 .about {
     @include grid;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     padding-top: 4vw;
+    .medium {
+        font-weight: 500;
+    }
     .text {
         width: 90%;
         color: #2e2e2e;
@@ -135,17 +143,10 @@ header {
 footer {
     @include grid;
     background-color: $background-color;
-    position: fixed;
-    bottom: 0;
-    right: 1%;
-    left: 1%;
-    z-index: 1000;
     height: 4vw;
     margin: 0;
     align-items: center;
-    .social a { margin-right: 2%; }
-    .mail { color: $primary-color; }
-    .copyright { justify-self: end; }
+    .copyright { justify-self: start; }
 }
 
 @media screen and (max-width: 1024px) {
@@ -176,11 +177,12 @@ footer {
     }
 
     footer {
-        grid-template-columns: 1fr 1fr;
-    }  
-
-    .copyright {
-        display: none;
+        @include grid;
+        background-color: $background-color;
+        height: 4vw;
+        margin: 0;
+        align-items: center;
+        .copyright { justify-self: start; }
     }
 }
 
@@ -194,9 +196,19 @@ footer {
     }
 
     header {
-        height: 7vw;
+        grid-template-columns: 1fr;
+        height: 10vw;
         left: 3%;
         right: 3%;
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: none;
     }
 
     .nav {
@@ -215,7 +227,7 @@ footer {
         padding-top: 7vw;
         grid-template-columns: 100%;
         grid-row-gap: 1%;
-        margin-bottom: 300px;
+        margin-bottom: 100px;
     }
 
     .text, .lists {
@@ -224,10 +236,5 @@ footer {
     
     footer {
         height: 7vw;
-    }
-
-    .social {
-        display: flex;
-        justify-content: end;
     }
 } 
