@@ -1,13 +1,7 @@
 $font-stack: 'Golos Text', sans-serif;
-$primary-color: #9C9C9C;
+$primary-color: #222222;
 $background-color: #FCFCFC;
 $hover-color: #577693;
-
-@mixin grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2%;
-}
 
 @mixin selection {
     background-color: $hover-color;
@@ -16,8 +10,8 @@ $hover-color: #577693;
 
 @mixin font {
     font-family: $font-stack;
-    font-size: 1.2vw;
-    line-height: 120%;
+    font-size: 1.4vw;
+    line-height: 130%;
     letter-spacing: -0.05em;
 }
 
@@ -33,11 +27,16 @@ body {
     box-sizing: border-box;
     background-color: $background-color;
     overflow-x: hidden;
+    color: $primary-color;
+}
+
+img {
+    width: 100%;
 }
 
 .container {
     margin: 0 auto;
-    width: 96%;
+    width: 60%;
 }
 
 p, a {
@@ -53,39 +52,47 @@ a:hover {
     transition: 0.5s;
 }
 
+.text {
+    width: 90%;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.project-image {
+    width: 100%;
+}
+
 header {
-    @include grid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: $background-color;
     height: 4vw;
     position: fixed;
     top: 0;
-    right: 2%;
-    left: 2%;
+    right: 20%;
+    left: 20%;
     z-index: 1000;
     align-items: center;
     .logo a { color: $primary-color; }
     .contacts {
         display: flex;
-        justify-content: space-between;
-        .social { 
-            display: flex;
-            justify-content: start;
-            a {
-                margin-right: 10px;
+        justify-content: start;
+        a {
+            margin-right: 16px;
+            &:last-child {
+                margin-right: 0;
             }
         }
-    }
-    .mail { 
-        color: $primary-color; 
     }
 }
 
 .works {
-    @include grid;
-    grid-row-gap: 4%;
     width: 100%;
-    padding-top: 4vw;
     margin-bottom: 100px;
+    padding-top: 4vw;
     .work, .cover { 
         width: 100%; 
         .cover-link {
@@ -125,23 +132,14 @@ header {
 }
 
 .about {
-    @include grid;
     margin-bottom: 100px;
     padding-top: 4vw;
-    .medium {
-        font-weight: 500;
-    }
-    .text {
-        width: 90%;
-        color: #2e2e2e;
-    }
     .lists {
         width: 90%;
     }
 }
 
 footer {
-    @include grid;
     background-color: $background-color;
     height: 4vw;
     margin: 0;
@@ -151,7 +149,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
     body {
-        font-size: 1.5vw;
+        font-size: 1.6vw;
     }
 
     header {
@@ -177,7 +175,6 @@ footer {
     }
 
     footer {
-        @include grid;
         background-color: $background-color;
         height: 4vw;
         margin: 0;
@@ -188,7 +185,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     body {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .container {
