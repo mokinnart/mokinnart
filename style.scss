@@ -91,7 +91,6 @@ header {
 
 .works {
     width: 100%;
-    margin-bottom: 100px;
     padding-top: 4vw;
     .work, .cover { 
         width: 100%; 
@@ -214,6 +213,7 @@ footer {
     }
 
     .about {
+        padding-top: 10vw;
         grid-template-columns: 100%;
         margin-bottom: 100px;
         .information { margin-bottom: 2em;} 
@@ -221,7 +221,7 @@ footer {
     }
 
     .works {
-        padding-top: 7vw;
+        padding-top: 10vw;
         grid-template-columns: 100%;
         grid-row-gap: 1%;
         margin-bottom: 100px;

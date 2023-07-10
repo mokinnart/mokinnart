@@ -88,7 +88,6 @@ header .contacts a:last-child {
 
 .works {
   width: 100%;
-  margin-bottom: 100px;
   padding-top: 4vw;
   animation: 2s show ease;
 }
@@ -207,6 +206,7 @@ footer .copyright {
     justify-content: end;
   }
   .about {
+    padding-top: 10vw;
     grid-template-columns: 100%;
     margin-bottom: 100px;
   }
@@ -217,7 +217,7 @@ footer .copyright {
     margin-bottom: 2em;
   }
   .works {
-    padding-top: 7vw;
+    padding-top: 10vw;
     grid-template-columns: 100%;
     grid-row-gap: 1%;
     margin-bottom: 100px;
